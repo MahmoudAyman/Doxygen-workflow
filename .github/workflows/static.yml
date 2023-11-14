@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate Doxygen Documentation
         run: |
-          doxygen /home/ayman/Desktop/doc-test-2/Doxygen-workflow/Doxyfile  # Adjust the command according to your Doxyfile's location
+          doxygen Doxyfile  # Adjust the command according to your Doxyfile's location
   deploy:
     environment:
       name: github-pages

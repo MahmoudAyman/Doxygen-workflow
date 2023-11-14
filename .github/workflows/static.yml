@@ -38,12 +38,7 @@ jobs:
       - name: Generate Doxygen Documentation
         run: |
           doxygen Doxyfile  # Adjust the command according to your Doxyfile's location
-          
-      - name: Deploy HTML Documentation
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html  # Update the path based on Doxygen output location
+
 
   deploy:
     environment:

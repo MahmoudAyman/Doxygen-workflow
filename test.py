@@ -1,3 +1,8 @@
+"""@package docstring
+Documentation for this module.
+
+More details.
+"""
 class Test:
     """This class represents a test class."""
 

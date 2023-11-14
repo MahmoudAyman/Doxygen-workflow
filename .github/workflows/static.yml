@@ -23,6 +23,21 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen Documentation
+        run: |
+          doxygen Doxyfile  # Adjust the command according to your Doxyfile's location
   deploy:
     environment:
       name: github-pages

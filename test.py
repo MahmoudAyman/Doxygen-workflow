@@ -34,6 +34,20 @@ class Test:
         """
         pass
 
+    def trr(self):
+        """
+        This method represents the 'value' function.
+
+        Explanation about what this function does and its purpose.
+
+        Args:
+            self: The object instance.
+
+        Returns:
+            None
+        """
+        pass
+
 class Test2:
 
     def test_function():

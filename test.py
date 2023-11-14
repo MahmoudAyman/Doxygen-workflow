@@ -28,3 +28,8 @@ class Test:
             None
         """
         pass
+
+class Test2:
+
+    def test_function():
+        pass

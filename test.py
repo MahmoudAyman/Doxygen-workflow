@@ -14,3 +14,17 @@ class Test:
             None
         """
         pass
+
+    def value(self):
+        """
+        This method represents the 'value' function.
+
+        Explanation about what this function does and its purpose.
+
+        Args:
+            self: The object instance.
+
+        Returns:
+            None
+        """
+        pass
